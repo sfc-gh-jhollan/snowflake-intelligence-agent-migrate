@@ -38,8 +38,10 @@ Prior to running the script, please ensure the runner has the following privileg
 The user running the SQL command will be creating the agent objects with their active execution role and privileges, so ownership privileges will be automatically assigned to the role with which the script is run, so make sure to either select the right role or change grants after creating the objects using
 
 ```sql
-// for granting privileges on the agentGRANT <PRIVILEGE> ON AGENT <AGENT_NAME> TO ROLE <ROLE_NAME>;
-// for revoking privileges on the agentREVOKE <PRIVILEGE> ON AGENT <AGENT_NAME> FROM ROLE <ROLE_NAME>;
+-- for granting privileges on the agent
+GRANT <PRIVILEGE> ON AGENT <AGENT_NAME> TO ROLE <ROLE_NAME>;
+-- for revoking privileges on the agent
+REVOKE <PRIVILEGE> ON AGENT <AGENT_NAME> FROM ROLE <ROLE_NAME>;
 ```
 
 ## Agent creation
