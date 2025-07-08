@@ -156,8 +156,10 @@ WITH migrate_to_agent_objects AS PROCEDURE ()
 After running the migrations, agent objects can be queried using to validate the execution.
 
 ```sql
-// List all agentsSHOW AGENTS IN SCHEMA snowflake_intelligence.agents;
-// Describe a specific agentDESCRIBE AGENT snowflake_intelligence.agents.<AGENT_NAME>;
+-- List all agents
+SHOW AGENTS IN SCHEMA snowflake_intelligence.agents;
+-- Describe a specific agent
+DESCRIBE AGENT snowflake_intelligence.agents.<AGENT_NAME>;
 ```
 
 # After Migrating
