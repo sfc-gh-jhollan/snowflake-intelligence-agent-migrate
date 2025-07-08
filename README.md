@@ -7,7 +7,7 @@ Created: Jun 27, 2025 Last updated: Jul 8, 2025
 
 Users who joined the Snowflake Intelligence preview prior to July 10 were asked to create a table to store agent configuration (`snowflake_intelligence.agents.config`). We are now transitioning to having agents be a first class object within Snowflake (`create agent`). As part of this, users who were active in the PrPr previously who wish to migrate agents from the “legacy” table to the new “native” object will need to take some steps to migrate.
 
-Until July 21 we will support both “legacy” and “native” agents in the UI. But as of July 21, Snowflake Intelligence will start to only list agents in the new native format. Your old agents will still exist in the config table, and you can still migrate them after this date, but you will no longer see them listed in the agent dropdown after this date.
+Until July 22 we will support both “legacy” and “native” agents in the UI. But as of July 22, Snowflake Intelligence will start to only list agents in the new native format. Your old agents will still exist in the config table, and you can still migrate them after this date, but you will no longer see them listed in the agent dropdown after this date.
 
 In order to facilitate a smooth migration from table-based agents to agent objects, we want to provide a sql command/script that automatically migrates table-based agents to agent objects. This doc shares the script and discusses relevant callouts/caveats/permissions.
 
